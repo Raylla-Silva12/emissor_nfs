@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Configurações - Sistema de Notas Fiscais{% endblock %}
+{% block header %}Configurações da Empresa{% endblock %}
+
+{% block content %}
+    <div class="card">
+        <div class="card-body">
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Nome da Empresa</label>
+                    <input type="text" class="form-control" placeholder="Ex: Minha Empresa LTDA" disabled>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">CNPJ</label>
+                    <input type="text" class="form-control" placeholder="00.000.000/0000-00" disabled>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Endereço</label>
+                    <input type="text" class="form-control" placeholder="Rua Exemplo, 123 - Cidade/UF" disabled>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Número para Contato</label>
+                    <input type="email" class="form-control" placeholder="+00 00 0000-0000" disabled>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">E-mail para Contato</label>
+                    <input type="email" class="form-control" placeholder="exemplo@empresa.com" disabled>
+                </div>
+
+                <button class="btn btn-secondary" disabled>
+                    <i class="fas fa-pen"></i> Editar
+                </button>
+            </form>
+        </div>
+    </div>
+{% endblock %}
